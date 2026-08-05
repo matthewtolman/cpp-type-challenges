@@ -3,3 +3,6 @@ cmake-build-*/
 build/
 dist/
 out/
+.idea/
+.vs/
+.vscode/
