@@ -24,8 +24,10 @@ recompiling that challenge every time.
 * Websites/Blogs
   * [cppreference.com](https://cppreference.com/)
   * [My blog where I present the challenges (and cover solutions)](https://matthewtolman.com)
+    * Note: my blog posts are scheduled, so challenges may come out here before they're presented on my blog. Think of it as an early preview!
 * YouTube
   * [C++ Weekly](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
 * Books
   * C++ Template Metaprogramming by David Abrahams, Aleksey Gurtovoy (ISBN 0321227255)
   * Advanced Metaprogramming in Classic C++ by Davide Di Gennaro (ISBN-13 978-1-4842-1011-6)
+
