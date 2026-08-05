@@ -29,23 +29,9 @@ namespace pick_challenge {
      * Setup types, do NOT change these
      *************************************/
 
-    struct Todo {
-        std::string title;
-        std::string description;
-        bool completed;
-    };
-
-    struct Assignment {
-        std::string_view title;
-        std::string_view description;
-        int completed;
-    };
-
     enum class PickFields {
         TITLE, DESCRIPTION, COMPLETED,
     };
-
-
 
     /*************************************
      * Solution Type, CHANGE THIS
@@ -89,6 +75,18 @@ namespace pick_challenge {
         {
             HoldsTrue<std::is_same_v<decltype(std::declval<T>().completed), decltype(std::declval<U>().completed)> >{}
         } -> std::same_as<std::true_type>;
+    };
+
+    struct Todo {
+        std::string title;
+        std::string description;
+        bool completed;
+    };
+
+    struct Assignment {
+        std::string_view title;
+        std::string_view description;
+        int completed;
     };
 
     using TestType1 = Pick<Todo, PickFields::TITLE, PickFields::DESCRIPTION>;
