@@ -6,19 +6,32 @@
 #include <type_traits>
 #include <string>
 
-// Change this type to get the static assert to pass
-using HelloWorld = void;
-
 /*
- *  ____  ____  ____  ____  ____
- * (_  _)(  __)/ ___)(_  _)/ ___)
- *   )(   ) _) \___ \  )(  \___ \
- *  (__) (____)(____/ (__) (____/
+ * Problem:
  *
- *  Do Not Modify Below This Line
- *  ------------------------------
+ * This is a warm-up challenge for making sure things run.
+ * The goal is to get the HelloWorld type (specified with using) to match the std::string type.
+ *
  */
 
-static_assert(std::is_same_v<HelloWorld, std::string>);
+namespace hello_world_challenge {
+    /*************************************
+     * Solution Type, CHANGE THIS
+     *************************************/
+
+    using HelloWorld = void;
+
+    /*************************************
+     *  ____  ____  ____  ____  ____
+     * (_  _)(  __)/ ___)(_  _)/ ___)
+     *   )(   ) _) \___ \  )(  \___ \
+     *  (__) (____)(____/ (__) (____/
+     *
+     *  Do Not Modify Below This Line
+     *  ------------------------------
+     *************************************/
+
+    static_assert(std::is_same_v<HelloWorld, std::string>);
+}
 
 #endif
