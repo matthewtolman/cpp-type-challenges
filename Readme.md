@@ -31,3 +31,7 @@ recompiling that challenge every time.
   * C++ Template Metaprogramming by David Abrahams, Aleksey Gurtovoy (ISBN 0321227255)
   * Advanced Metaprogramming in Classic C++ by Davide Di Gennaro (ISBN-13 978-1-4842-1011-6)
 
+## AI Free
+
+This repository is AI-free. I don't use AI to port the challenges, solve the challenges, etc.
+While I use CLion, I turn off their AI features.
