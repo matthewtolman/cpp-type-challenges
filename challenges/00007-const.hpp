@@ -23,7 +23,7 @@
 
 namespace const_challenge {
     /*************************************
-     * Solution Type, CHANGE THIS (may need some helpers)
+     * Solution Type, CHANGE THIS
      *************************************/
 
     template<class RefType>
