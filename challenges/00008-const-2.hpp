@@ -10,7 +10,8 @@
 *
 * We want to be able to create a new 'Const' type whose properties are determined from a combination of a
 * reference type and a list of fields to pick from that reference type. Fields in that list
-* should be marked const. Other fields should be left as-is.
+* should be marked const, other fields should be left as-is. If the field list is empty, then everything
+* should be marked const.
 *
 * Note: Since C++20 doesn't have reflection, we can't do arbitrary field selection like we can in TypeScript.
 * So, for this challenge, we will only be picking out three fields: title, description, completed.
@@ -96,6 +97,11 @@ namespace const_challenge {
     static_assert(titleShouldBeConst<TestType4, Assignment, true>);
     static_assert(descriptionShouldBeConst<TestType4, Assignment, false>);
     static_assert(completedShouldBeConst<TestType4, Assignment, false>);
+
+    using TestType5 = Const<Assignment>;
+    static_assert(titleShouldBeConst<TestType5, Assignment, true>);
+    static_assert(descriptionShouldBeConst<TestType5, Assignment, true>);
+    static_assert(completedShouldBeConst<TestType5, Assignment, true>);
 }
 
 #endif
