@@ -4,3 +4,4 @@
 #include "challenges/00007-const.hpp"
 #include "challenges/00008-const-2.hpp"
 #include "challenges/00010-tuple-to-variant.hpp"
+#include "challenges/04182-fibonacci.hpp"
